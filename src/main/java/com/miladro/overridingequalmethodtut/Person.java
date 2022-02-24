@@ -12,7 +12,7 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
-        if (Objects.isNull(o))
+        if (! (o instanceof Person))
             return false;
         Person person = (Person) o;
         //Reflexivity AND Symmetricity
